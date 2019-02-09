@@ -47,7 +47,7 @@ else:
 	print("==================================")
 	print("wget installed")
 	os.system("cd /data/data/com.termux/files/home && wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip")
-	os.system("cd /data/data/com.termux/files/home && ngrok-stable-linux-arm.zip")
+	os.system("cd /data/data/com.termux/files/home && unzip ngrok-stable-linux-arm.zip")
 	os.system("cd $home && sudo chmod 755 ngrok")
 	os.system("cd $home && cp ngrok /data/data/com.termux/files/usr/bin")
 	os.system("cd $home && git clone https://github.com/samyoyo/weeman.git")
