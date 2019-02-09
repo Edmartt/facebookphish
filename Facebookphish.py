@@ -22,10 +22,10 @@ print("==========================================")
 
 print("\nLet's start, we need to update and install some tools first... ")
 include=["Y","N","y","n","yes","no","Yes","No","YES","NO"]
-start=raw_input("Do you want to continue? Y/N: ")
-while start not in include:
-	start=raw_input("You need to choose a valid option (Y, y, N, n, yes, no)")
-if start=="N" or start=="n" or start=="no":
+star=input("Do you want to continue? Y/N: ")
+while star not in include:
+	star=input("You need to choose a valid option (Y, y, N, n, yes, no)")
+if star=="N" or star=="n" or star=="no":
 	print("Okay, let's try when you want to. Goodbye")
 else:
 	os.system("pkg update")
