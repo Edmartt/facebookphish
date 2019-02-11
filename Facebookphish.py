@@ -8,11 +8,11 @@ def python_ver():
 	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
 			pass #good
 	elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
-		print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY")
+		print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY. NOW YOU NEED TO FINISH THIS WITH CRTL + C")
 		print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
 
 	else:
-		print("Your Python version is too old")
+		print("Your Python version is too old or you don't have python installed")
 
 try:
 	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
