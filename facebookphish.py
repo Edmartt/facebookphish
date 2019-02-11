@@ -20,8 +20,7 @@ def python_ver():
                 sys.exit()
 
 
-
-		
+python_ver()	
 		
 print ("=========================================")
 
@@ -39,7 +38,6 @@ print(""" _______    ___       ______  _______ .______     ______     ______    
 
 print("==========================================")
 
-python_ver()
 
 print("\nScript for Termux")
 print("Made by Sam Sepiol")
