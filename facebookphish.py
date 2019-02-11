@@ -1,22 +1,24 @@
 import os
 import sys
 
-
 def python_ver():
 
 
-	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
-			pass #good
-	elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
-		print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY. NOW YOU NEED TO FINISH THIS WITH CRTL + C")
-		print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
+        if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
+                        pass #good
+        elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
+                print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY")
+                print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
+                sys.exit()
+        else:
+                print("Your Python version is too old")
 
-	else:
-		print("Your Python version is too old or you don't have python installed")
 
-	if sys.version[:3]=="2" or "2.7" in sys.version[:3]:
 
-		print("Please run this script with pyhton3 to continue...")
+                print("Please run this script with pyhton3 to continue...")
+
+                sys.exit()
+
 
 
 		
