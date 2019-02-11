@@ -14,15 +14,13 @@ def python_ver():
 	else:
 		print("Your Python version is too old or you don't have python installed")
 
-try:
-	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
-		pass #Good
-except (ValueError, TypeError):
 	if sys.version[:3]=="2" or "2.7" in sys.version[:3]:
 
 		print("Please run this script with pyhton3 to continue...")
 
 
+		
+		
 print ("=========================================")
 
 print(""" _______    ___       ______  _______ .______     ______     ______    __  ___ 
@@ -38,6 +36,8 @@ print(""" _______    ___       ______  _______ .______     ______     ______    
 | _|      |__|  |__| |__| |_______/    |__|  |__| """)
 
 print("==========================================")
+
+python_ver()
 
 print("\nScript for Termux")
 print("Made by Sam Sepiol")
