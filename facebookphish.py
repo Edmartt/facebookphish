@@ -2,22 +2,22 @@ import os
 import sys
 
 def python_ver():
+		if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
+			pass#good
 
-
-        if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
-                        pass #good
-        elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
-                print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY")
-                print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
-                sys.exit()
-        else:
-		elif if sys.version[:3]=="1" in sys.version[:3]:
-			print("Please run this script with pyhton3 to continue...")
+		elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
+			print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY")
+			print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
 			sys.exit()
 
+		else:
+			if sys.version[:3]=="1" in sys.version[:3]:
+				print("Please run this script with pyhton3 to continue...")
+				sys.exit()
 
-python_ver()	
-		
+
+python_ver()
+
 print ("=========================================")
 
 print(""" _______    ___       ______  _______ .______     ______     ______    __  ___ 
@@ -38,7 +38,6 @@ print("==========================================")
 print("\nScript for Termux")
 print("Made by Sam Sepiol")
 print("==========================================")
-#python_ver()
 print("\nLet's start, we need to update and install some tools first... ")
 include=["Y","N","y","n","yes","no","Yes","No","YES","NO"]
 start=input("Do you want to continue? Y/N: ")
