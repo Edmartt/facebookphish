@@ -11,7 +11,7 @@ def python_ver():
                 print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
                 sys.exit()
         else:
-                sys.versio[:3]<="2" in sys.version[:3]:
+                sys.version[:3]<="2" in sys.version[:3]:
 			print("Please run this script with pyhton3 to continue...")
 			sys.exit()
 
